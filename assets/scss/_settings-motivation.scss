@@ -1,0 +1,67 @@
+/* Variables */
+/* LOGO */
+$logo-path:url("../../images/logo.png");
+// $logo-path:url("../../img2/logo2.jpg");
+
+/* TOP NAVIGATION */
+$top-red-border-left: #c54a1f;
+$top-red-box-shadow:#f5612d;
+
+$link-hov-focus:#e85d15;
+$link-hov-focus-shd:#7e370e;
+
+$top-login-gradient-1:#f15722;
+$top-login-gradient-2:#f15722;
+
+$navbar-grad-1:#c83e0f;
+$navbar-grad-2:#f15723;
+
+$top-register-border:#222222;
+$top-register-box-shadow:#444444;
+
+$top-register-gradient-1:#333333;
+$top-register-gradient-2:#333333;
+
+$side-fix-gradient-1:#271f1f;
+$side-fix-gradient-2:#231b1b;
+
+$side-fix-brd-top:#444346;
+$side-fix-brd-bottom:#2d271d;
+
+$green-grad-color-1:#00b05b;
+$green-grad-color-2:#00a153;
+
+$group-addon-btn:#333333;
+
+/* BACKGROUND IMAGE */
+$overlay-bg:rgba(39, 28, 32, 0.8);
+$overlay-box-shadow:#000;
+
+/* BOTTOM BAR COLORS */
+$company-logos-color-1:#f15722;
+$company-logos-color-2:#f15722;
+
+$company-logos-brd:#c5461a;
+$company-logos-shd:#f56e40;
+
+$visa-block-gradient-1:#333333;
+$visa-block-gradient-2:#333333;
+
+/* THEME BOX BACKGROUND */
+$theme-box-bg:rgba(14, 14, 14, 0.9);
+
+/* SIDE FIX PATH */
+$side-fix-1-bg:url("../../images/sid-btn-1.png");
+$side-fix-2-bg:url("../../images/sid-btn-2.png");
+
+/* MIXINS */
+@mixin gradient($from-color, $to-color) {
+	background:($to-color);
+	background-color: mix($from-color, $to-color); /* Fallback */
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from($from-color), to($to-color));
+	background-image: -webkit-linear-gradient(top, $from-color, $to-color); 
+	background-image:    -moz-linear-gradient(top, $from-color, $to-color);
+	background-image:     -ms-linear-gradient(top, $from-color, $to-color);
+	background-image:      -o-linear-gradient(top, $from-color, $to-color);
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='$from-color', EndColorStr='$to-color')";
+}
